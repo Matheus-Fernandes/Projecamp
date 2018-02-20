@@ -18,6 +18,16 @@ hr.light {
   border-color: #fff;
 }
 
+.card-container{
+   margin-bottom:30px;
+}
+
+.card-container .card-block{
+  height: 60px;
+}
+.card-container img{  
+    height: 150px;
+}
 a {
   color: #F05F40;
   -webkit-transition: all 0.2s;
