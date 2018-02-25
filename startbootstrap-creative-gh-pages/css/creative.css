@@ -27,19 +27,19 @@ hr.light {
 }
 
 .card-container .card-block{
-  height: 60px;
+  background-color: #f05f40;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
 .card-container .card-title{
   margin:0;
-  /*font-weight: bold;*/
+  font-weight: bold;
+  color: white;
+
   text-align: center;
 }
 
 .card-container img{  
-    min-height: 200px;
-    max-height: 200px;
     height: auto;
 }
 a {
