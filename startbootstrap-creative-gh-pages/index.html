@@ -5,10 +5,26 @@
   
   	<script>
 		var servicos = [
-			{titulo : "Decorações", src: "http://www.gesso.emp.br/public/img/default/gesso/empresa-de-gesso.jpg"},
-			{titulo : "Pisos", src : "http://www.portelawoods.com.br/wp-content/uploads/2016/02/pisos-laminados-e-vinilicos.jpg"},
-			{titulo : "Soluções Acústicas", src : "http://44arquitetura.com.br/wp-content/uploads/solu%C3%A7%C3%B5es-ac%C3%BAsticas-08-750x354.jpg"},
-			{titulo : "Forros e Divisórias", src : "https://http2.mlstatic.com/forro-drywall-isopor-pvc-gesso-e-divisorias-eucatex--D_NQ_NP_148711-MLB20636169238_032016-F.jpg"}
+			{
+        titulo : "Decorações", 
+        img: "http://www.gesso.emp.br/public/img/default/gesso/empresa-de-gesso.jpg",
+        link: ""
+      },
+			{
+        titulo : "Pisos", 
+        img : "http://www.portelawoods.com.br/wp-content/uploads/2016/02/pisos-laminados-e-vinilicos.jpg",
+        link: ""
+      },
+			{
+        titulo : "Soluções Acústicas", 
+        img : "http://44arquitetura.com.br/wp-content/uploads/solu%C3%A7%C3%B5es-ac%C3%BAsticas-08-750x354.jpg",
+        link: ""
+      },
+			{
+        titulo : "Forros e Divisórias", 
+        img : "https://http2.mlstatic.com/forro-drywall-isopor-pvc-gesso-e-divisorias-eucatex--D_NQ_NP_148711-MLB20636169238_032016-F.jpg",
+        link: ""
+      }
 		];
 	</script>
 
@@ -116,12 +132,21 @@
 				servicos.forEach(function(servico){
 					document.write(`
 					  <div class="col-lg-3 col-md-6 col-sm-12 card-container">
-						<div class="card">
-						  <img src="${servico.src}" style="width:100%">
-						  <div class="card-block">
-							<h5 class="card-title">${servico.titulo}</h5>
-						  </div>
-						</div>
+              <a class="card-link" href="${servico.link}">
+    						<div class="card">
+                  <div class="container-overlay">
+                   <div class="overlay">
+                      <div class="link-card">
+                          SAIBA MAIS
+                      </div>
+                   </div>
+                   <img src="${servico.img}" class="image">
+                  </div> 
+    						  <div class="card-block">
+    							 <h5 class="card-title">${servico.titulo}</h5>
+    						  </div>
+    						</div>
+              </a>
 					  </div>
 					`);
 				});
