@@ -18,6 +18,10 @@ hr.light {
   border-color: #fff;
 }
 
+.my-auto{
+  width: 75% !important;
+}
+
 .container {
   position: relative;
   width: 50%;
